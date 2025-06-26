@@ -1,47 +1,35 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
-import Header from "./components/Header";
-import PlayerSummary from "./components/PlayerSummary";
-import MostRecentPlayLike from "./components/MostRecentPlayLike";
+import AnalyzeModal from "./components/AnalyzeModal";
 import CareerAverages from "./components/CareerAverages";
-import DataInputToggle from "./components/DataInputToggle";
-import InputSourceCards from "./components/InputSourceCards";
-import NeuralOutputLog from "./components/NeuralOutputLog";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import HistoryDatabase from "./components/HistoryDatabase";
+import MostRecentPlayLike from "./components/MostRecentPlayLike";
+import PlayerSummary from "./components/PlayerSummary";
 import TestModules from "./components/TestModules";
 import RankAnalysis from "./components/RankAnalysis";
 import PlayerSync from "./components/PlayerSync";
-import PerformanceCore from "./components/PerformanceCore";
-import SystemAnalysis from "./components/SystemAnalysis";
-import HistoryDatabase from "./components/HistoryDatabase";
-import Footer from "./components/Footer";
 
 export default function App() {
   const [inputMode, setInputMode] = useState("STREAM");
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="app">
-      <Header />
+      <Header onAnalyze={() => setModalOpen(true)} />
       <main className="main-content">
         <section>
           <PlayerSummary />
         </section>
 
-        <section className="two-column">
+        <section>
           <MostRecentPlayLike />
+        </section>
+
+        <section>
           <CareerAverages />
-        </section>
-
-        <section>
-          <DataInputToggle inputMode={inputMode} setInputMode={setInputMode} />
-        </section>
-
-        <section>
-          <InputSourceCards />
-        </section>
-
-        <section>
-          <NeuralOutputLog />
         </section>
 
         <section>
@@ -54,18 +42,16 @@ export default function App() {
         </section>
 
         <section>
-          <PerformanceCore />
-        </section>
-
-        <section>
-          <SystemAnalysis />
-        </section>
-
-        <section>
           <HistoryDatabase />
         </section>
       </main>
       <Footer />
+      <AnalyzeModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        inputMode={inputMode}
+        setInputMode={setInputMode}
+      />
     </div>
   );
 }

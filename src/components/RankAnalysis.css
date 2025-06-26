@@ -1,0 +1,163 @@
+/* Container */
+.ra-container {
+  background: linear-gradient(to bottom right, #03161b, #020b10);
+  border: 2px solid var(--border-cyan);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 2px 25px 1px rgba(14, 85, 98, 0.45);
+}
+
+/* Header */
+.ra-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.ra-header-icon {
+  background: linear-gradient(
+    to bottom right,
+    var(--neon-cyan),
+    var(--neon-purple)
+  );
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--card-bg);
+}
+.ra-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--neon-cyan);
+  letter-spacing: 0.05em;
+}
+
+/* Filters */
+.ra-filters {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.ra-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ra-filter label {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+.ra-select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--card-bg);
+  color: var(--text-light);
+  border: 1px solid var(--border-cyan);
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.ra-platform-select {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ra-platform-select .ra-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: var(--text-muted);
+}
+.ra-platform-select .ra-select {
+  padding-left: 2.5rem;
+}
+
+/* Table */
+.ra-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+}
+.ra-table th,
+.ra-table td {
+  padding: 0.75rem;
+  color: var(--text-gray);
+}
+.ra-table th {
+  text-align: left;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-cyan);
+}
+.ra-table tbody tr {
+  border-top: 1px solid var(--border-cyan);
+}
+.ra-table .ra-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #000;
+}
+.ra-badge--diamond {
+  background: var(--neon-cyan);
+}
+.ra-badge--platinum {
+  background: var(--neon-purple);
+  color: #fff;
+}
+.ra-badge--gold {
+  background: var(--neon-gold);
+  color: #000;
+}
+.ra-win {
+  color: var(--win-green);
+}
+.ra-loss {
+  color: var(--border-red);
+}
+
+/* Summary Cards */
+.ra-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.ra-card {
+  background: var(--card-bg);
+  border-radius: 0.375rem;
+  padding: 1rem;
+  text-align: center;
+}
+.ra-card-value {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-light);
+}
+.ra-summary .ra-card:nth-child(1) .ra-card-value {
+  color: var(--neon-purple);
+}
+.ra-summary .ra-card:nth-child(2) .ra-card-value {
+  color: var(--win-green);
+}
+.ra-summary .ra-card:nth-child(3) .ra-card-value {
+  color: var(--border-red);
+}
+.ra-summary .ra-card:nth-child(4) .ra-card-value {
+  color: var(--neon-cyan);
+}
+.ra-card-label {
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}

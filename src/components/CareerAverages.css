@@ -25,10 +25,24 @@
   margin-right: 1rem;
 }
 
+.ca-footnote {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--text-gray);
+  text-align: center;
+}
+
 .ca-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  /* show 2 columns on mobile, 4 on desktop */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 1024px) {
+  .ca-grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 /* Individual card */
