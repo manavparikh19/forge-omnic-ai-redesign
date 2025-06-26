@@ -42,12 +42,26 @@ A React-based frontend for Omnic Forge — a gaming analytics dashboard.
 ```bash
 forge-omnic-ai-redesign/
 ├── public/
-│   └── index.html       
+│   └── index.html
 ├── src/
-│   ├── components/        
-│   ├── assets/            
-│   ├── App.jsx            
-│   ├── index.js   
-│   └── index.css         
-└── README.md              
+│   ├── components/
+│   ├── assets/
+│   ├── App.jsx
+│   ├── index.js
+│   └── index.css
+└── README.md
 ```
+
+## Screenshots
+
+![Screenshot6](screenshots/ui6.PNG)
+
+![Screenshot1](screenshots/ui1.PNG)
+
+![Screenshot2](screenshots/ui2.PNG)
+
+![Screenshot3](screenshots/ui3.PNG)
+
+![Screenshot4](screenshots/ui4.PNG)
+
+![Screenshot5](screenshots/ui5.PNG)
