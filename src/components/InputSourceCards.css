@@ -1,0 +1,74 @@
+/* Grid for two columns */
+.isc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Grid for single column (WEB/FILE) */
+.isc-grid-single {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Base card styling */
+.isc-card {
+  background: var(--card-bg);
+  border: 2px solid var(--border-gray);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+/* YouTube card */
+.isc-card--yt {
+  border-color: #e03e3e;
+  color: #e03e3e;
+}
+
+/* Twitch card */
+.isc-card--tw {
+  border-color: #6b21a8;
+  color: #6b21a8;
+}
+
+/* Web card */
+.isc-card--web {
+  border-color: rgba(43, 40, 238, 0.5);
+  color: rgba(43, 40, 238, 0.5);
+}
+
+/* File card */
+.isc-card--file {
+  border-color: rgba(199, 177, 9, 0.5);
+  color: rgba(199, 177, 9, 0.5);
+}
+
+/* Icon styling */
+.isc-icon {
+  width: 2rem;
+  height: 2rem;
+  color: currentColor;
+}
+
+/* Title styling */
+.isc-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Description styling */
+.isc-desc {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-white);
+  line-height: 1.25;
+}

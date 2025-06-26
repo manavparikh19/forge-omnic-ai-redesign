@@ -1,0 +1,45 @@
+/* 1) Full‐screen overlay */
+.dimmed-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* 2) Modal container */
+.modal-box {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 0.5rem;
+  border: 2px solid var(--border-cyan);
+  padding: 1.5rem;
+  min-width: 320px;
+  width: 40%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* 3) Close button */
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+/* 4) Title */
+.modal-title {
+  margin: 0;
+  color: var(--text-white);
+  font-size: 1.25rem;
+  text-align: center;
+}

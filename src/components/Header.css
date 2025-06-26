@@ -1,0 +1,157 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-bg);
+  padding: 5px 20px;
+  border-bottom: 2px solid var(--border-cyan);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(to right, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-game {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border-gray);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  color: var(--text-white);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-btn {
+  background: linear-gradient(to right, var(--neon-cyan), var(--neon-purple));
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.header-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid var(--border-cyan);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header-icon {
+  color: var(--neon-cyan);
+  transition: color 0.2s;
+}
+.header-icon-box:hover .header-icon {
+  color: var(--text-white);
+}
+.header-icon-box:hover {
+  background-color: rgba(14, 85, 98, 0.5);
+}
+
+.hide-desktop {
+  display: none;
+}
+.hidden-mobile {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .hide-desktop {
+    display: block;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.header-menu-btn {
+  background: none;
+  border: none;
+  color: var(--neon-cyan);
+  cursor: pointer;
+}
+
+.mobile-drawer-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 50;
+}
+.mobile-drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100vh;
+  background: var(--header-bg);
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s;
+  z-index: 60;
+}
+.mobile-drawer.open {
+  left: 0;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.drawer-close-btn {
+  color: var(--neon-cyan);
+  cursor: pointer;
+}
+
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+.drawer-nav GameDropdown {
+  width: 100%;
+}
+.drawer-analyze {
+  width: 100%;
+  text-align: left;
+}
+.drawer-icons {
+  display: flex;
+  gap: 1rem;
+}
