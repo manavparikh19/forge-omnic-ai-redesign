@@ -1,0 +1,146 @@
+/* Container */
+.mrpl-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  background: linear-gradient(to bottom right, #130e1c, #020307);
+  border: 2px solid var(--border-purple);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 50px 2px #4d366780;
+}
+
+/* Header */
+.mrpl-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.mrpl-header-icon {
+  color: var(--neon-purple);
+  margin-right: 1rem;
+}
+.mrpl-header-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--neon-purple);
+}
+
+/* List */
+.mrpl-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Item */
+.mrpl-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-purple);
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+/* Left side */
+.mrpl-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Icon background variants */
+.mrpl-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-cyan {
+  background: var(--neon-cyan);
+}
+.bg-purple {
+  background: var(--neon-purple);
+}
+.bg-gold {
+  background: var(--neon-gold);
+}
+
+/* Content */
+.mrpl-content {
+  display: flex;
+  flex-direction: column;
+}
+.mrpl-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+.mrpl-similarity {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+}
+.text-cyan {
+  color: var(--neon-cyan);
+}
+.text-purple {
+  color: var(--neon-purple);
+}
+.text-gold {
+  color: var(--neon-gold);
+}
+.mrpl-desc {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}
+
+/* Right side */
+.mrpl-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Badges */
+.mrpl-badge {
+  padding: 0.25rem 1.3rem;
+  border-radius: 9999px;
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #fff;
+  white-space: nowrap;
+}
+.match {
+  background: var(--neon-green);
+}
+.similar {
+  background: var(--blue-500);
+}
+.style {
+  background: var(--neon-gold);
+}
+
+/* Watch button */
+.mrpl-watch-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--neon-purple);
+  background: transparent;
+  border: 1px solid var(--neon-purple);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.mrpl-watch-btn svg {
+  color: var(--neon-purple);
+}

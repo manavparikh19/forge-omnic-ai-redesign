@@ -1,0 +1,75 @@
+.game-dropdown {
+  border: 2px solid rgba(14, 85, 98);
+  position: relative;
+  display: inline-block;
+  font-size: 0.875rem;
+}
+
+.game-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.selected-game {
+  padding: 0.3rem 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--text-white);
+}
+
+.arrow {
+  padding: 0.3rem 0.3rem;
+  font-size: 1rem;
+  border-left: 2px solid rgb(14, 85, 98);
+  color: var(--text-white);
+}
+
+.selected-game:hover {
+  background-color: rgb(14, 85, 98);
+}
+
+.arrow:hover {
+  background-color: rgb(14, 85, 98);
+}
+
+.game-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #101216; /* panelBg */
+  border: 1px solid #1f2937; /* borderGray */
+  border-radius: 0.25rem;
+  margin-top: 0.25rem;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+.game-item {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-item:hover {
+  background: rgba(14, 85, 98, 0.5);
+}
+
+.selected {
+  background: rgba(14, 85, 98, 0.8);
+}
+
+.beta-badge {
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.625rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 9999px;
+  margin-left: 0.5rem;
+}
