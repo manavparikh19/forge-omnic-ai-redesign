@@ -1,0 +1,66 @@
+/* src/components/DataInputToggle.css */
+
+/* Container for modes */
+.data-input-toggle {
+  display: flex;
+  gap: 1rem;
+  background: var(--card-bg);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.data-input-toggle.stream {
+  border: 2px solid rgba(17, 155, 88, 0.5);
+}
+
+.data-input-toggle.web {
+  border: 2px solid rgba(43, 40, 238, 0.5);
+}
+
+.data-input-toggle.file {
+  border: 2px solid rgba(199, 177, 9, 0.5);
+}
+
+/* Mode button base style */
+.data-input-toggle button {
+  flex: 1;
+  padding: 0.5rem 0;
+  background: transparent;
+  color: var(--text-white);
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Active mode button */
+.data-input-toggle button.stream.active {
+  background: rgba(17, 155, 88, 0.2);
+  border: 2px solid rgba(17, 155, 88, 0.5);
+}
+
+.data-input-toggle button.web.active {
+  background: rgba(43, 40, 238, 0.2);
+  border: 2px solid rgba(43, 40, 238, 0.5);
+}
+
+.data-input-toggle button.file.active {
+  background: rgba(199, 177, 9, 0.2);
+  border: 2px solid rgba(199, 177, 9, 0.5);
+}
+
+/* Hover effect for buttons */
+.data-input-toggle button.stream:hover {
+  background: rgba(17, 155, 88, 0.2);
+  border: 2px solid rgba(17, 155, 88, 0.5);
+}
+
+.data-input-toggle button.web:hover {
+  background: rgba(43, 40, 238, 0.2);
+  border: 2px solid rgba(43, 40, 238, 0.5);
+}
+
+.data-input-toggle button.file:hover {
+  background: rgba(199, 177, 9, 0.2);
+  border: 2px solid rgba(199, 177, 9, 0.5);
+}

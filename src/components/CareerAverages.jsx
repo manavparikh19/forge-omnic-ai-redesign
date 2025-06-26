@@ -4,12 +4,22 @@ import { TrendingUp } from "lucide-react";
 
 export default function CareerAverages() {
   const stats = [
-    { label: "AVG KILLS", value: "21.4" },
-    { label: "AVG DEATHS", value: "12.8" },
-    { label: "AVG ASSISTS", value: "8.2" },
-    { label: "AVG ACS", value: "267" },
-    { label: "HEADSHOT %", value: "32%" },
-    { label: "RATING", value: "1.67" },
+    { label: "Eliminations", value: "5.8" },
+    { label: "Deaths", value: "1.1" },
+    { label: "Assists", value: "0" },
+    { label: "Headshots", value: "1.6" },
+    { label: "Healing", value: "54" },
+    { label: "Wallbangs", value: "0" },
+    { label: "Seconds Dead", value: "130" },
+    { label: "Seconds Alive", value: "600" },
+    { label: "Shielding", value: "0" },
+    { label: "Was Assisted", value: "0" },
+    { label: "Credits Earned", value: "17,000" },
+    { label: "Credits Spent", value: "15,000" },
+    { label: "Damage Taken", value: "570" },
+    { label: "First Bloods", value: "1.1" },
+    { label: "First Blooded", value: "0" },
+    { label: "Shield Damage Taken", value: "0" },
   ];
 
   return (
@@ -26,6 +36,7 @@ export default function CareerAverages() {
           </div>
         ))}
       </div>
+      <p className="ca-footnote">* per ten minutes of gameplay</p>
     </section>
   );
 }
